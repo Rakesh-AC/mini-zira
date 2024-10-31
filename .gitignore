@@ -1,0 +1,34 @@
+# Django specific #
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+*.sqlite3
+media/
+staticfiles/
+
+# Environment variables #
+.env
+
+# macOS specific #
+.DS_Store
+
+# Virtual environment #
+venv/
+env/
+
+# IDE files #
+.vscode/
+.idea/
+
+# Migrations #
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# Django cache and intermediate storage #
+*.cache
+*.mo
+
+# Temporary files #
+*.tmp
