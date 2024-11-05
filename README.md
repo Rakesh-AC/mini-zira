@@ -134,6 +134,7 @@ python 3.10 or greater please install the python by downloading from here [here]
      ```
 
 6. **Delete the project by id**
+
    - **URL:** `projects/id/delete/`
    - **Method:** `DELETE`
    - **Description:** Delete the project by id.
@@ -142,4 +143,54 @@ python 3.10 or greater please install the python by downloading from here [here]
      {
        "message": "Project deleted successfully."
      }
+     ```
+
+7. **Login api**
+   - **URL:** `/login/`
+   - **Method:** `POST`
+   - **Description:** login the user.
+   - **Request body example:**
+     ```json
+     {
+       "username": "rakesh",
+       "password": "rakesh@123"
+     }
+     ```
+   - **Respose body example:**
+     ```json
+     {
+       "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMwNjk5NTA2LCJpYXQiOjE3MzA2OTc3MDYsImp0aSI6ImM1YzY4Yjk1MzVhODQxOTVhNjI3YTgxOTYyNWEyMzYyIiwidXNlcl9pZCI6MX0.IMwcDR-kAllbktbS1g7YvXG58fyZaL-cMbKuAKasKK4",
+       "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczMDc4NDEwNiwiaWF0IjoxNzMwNjk3NzA2LCJqdGkiOiI1YzI3MGQ4MTg2ZjA0MDQzYjEzMTg4ZDIyNWY1ZWUzMiIsInVzZXJfaWQiOjF9.Y933IgMZ18Kns4p4bgXPRvrE-RYSvImtt8Fmn74vRMM",
+       "username": "rakesh",
+       "email": "rakesh@gmail.com"
+     }
+     ```
+8. **Register API**
+
+   - **URL:** `/register/`
+   - **Method:** `POST`
+   - **Description:** Register the user.
+   - **Request body example:**
+
+     ```json
+     {
+       "username": "rakesh",
+       "email": "rakesh@gmail.com",
+       "password": "rakesh@123"
+     }
+     ```
+
+   - **Response body:**
+     ```json
+     { "message": "User registered successfully" }
+     ```
+
+9. **Logout API**
+
+   - **URL:** `/logout/`
+   - **Method:** `POST`
+   - **Description:** Logout the user.
+   - **Response body:**
+     ```json
+     { "message": "Logged out successfully" }
      ```
